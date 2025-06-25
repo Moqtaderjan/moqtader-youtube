@@ -1,0 +1,208 @@
+.header {
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(211, 211, 211);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    z-index: 100;
+}
+.left-head-sec {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+
+}
+.ham-menu-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.youtube-logo {
+    width: 120px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.middle-head-sec {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    max-width: 650px;
+}
+.search-bar {
+    height: 70%;
+    border-width: 1px;
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+    border-radius: 3px 0px 0px 3px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 0px;
+    margin-left: 50px;
+}
+.search-bar::placeholder{
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 500px;
+}
+.search-bar:focus{
+    outline: none;
+    border-width: 1px;
+    border-color: blue;
+}
+.search-btn {
+    width: 90px;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px 3px 3px 0px;
+    border-color: rgb(211, 211, 211);
+    margin-left: -1px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+}
+
+.search-btn:hover {
+    background-color: rgb(240, 240, 240);
+}
+.search-logo {
+    width: 30px;
+    object-fit: contain;
+}
+.voice-search-btn {
+    background-color: rgb(245,245,245);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+.voice-search-icn {
+    width: 30px;
+}
+.right-head-sec {
+    background-color:  white;
+    margin-left: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    flex-shrink: 0;
+}
+.right-head-sec div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.right-head-sec  div img{
+    width: 30px;
+    cursor: pointer;
+}
+.notifications-img {
+    position: relative;
+}
+.unread-notifications {
+    background-color: rgb(207, 0, 0);
+    color: white;
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 14px;
+    padding: 1px 6px;
+    position:absolute;
+    left: 14px;
+    bottom: 15px;
+    box-sizing: border-box;
+
+}
+.right-head-sec .my-profile{
+    width: 40px;
+    cursor: pointer;
+}
+
+.middle-head-sec .tooltip,
+.right-head-sec .tooltip{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 2.5px;
+    font-size: 14px;
+    font-family: "Roboto", Arial;
+    position: absolute;
+    white-space: nowrap;
+    bottom: -50px;
+    align-self: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+}
+.right-head-sec .tooltip{
+    bottom: -70px;
+}
+
+.middle-head-sec button:hover .tooltip,
+.right-head-sec div:hover .tooltip{
+    opacity: 1;
+}
+
+
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 69px;
+    width: 90px;
+    z-index: 200;
+    padding-top: 5px;
+}
+.sidebar-link{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-family: "Roboto";
+    row-gap: 8px;
+
+}
+.sidebar-link:hover {
+    background-color: rgb(240, 240, 240);
+}
+.sidebar-link img{
+    width: 29px;
+}
+
