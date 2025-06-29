@@ -144,6 +144,7 @@
 .right-head-sec .my-profile{
     width: 40px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .middle-head-sec .tooltip,
